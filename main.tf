@@ -1,5 +1,5 @@
 terraform {
-  backend "azurerm" {}
+  backend "local" {}
 }
 
 resource "null_resource" "example1" {

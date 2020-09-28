@@ -1,9 +1,8 @@
+
 remote_state {
-  backend = "azurerm"
+  backend = "local"
   config = {
-    resource_group_name  = "XXX"
-    storage_account_name = "XXX"
-    container_name       = "testcontainer"
-    key                  = "${path_relative_to_include()}/terraform.tfstate"
+    path = "${path_relative_to_include()}/terraform.tfstate"
   }
 }
+
